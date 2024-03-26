@@ -1,0 +1,108 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 22.5rem;
+  text-align: start;
+  flex: 1 1 30%;
+  margin: 0px 20px 35px;
+  gap: 1rem;
+}
+.card:hover {
+  cursor: pointer;
+}
+
+.tag {
+  font-size: 0.8rem;
+  color: #eb0028;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+}
+
+.info-block {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dot {
+  height: 0.2rem;
+  width: 0.2rem;
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.author {
+  font-weight: 500;
+}
+
+.date-view {
+  color: #9b9b9b;
+}
+
+.text {
+  color: #929292;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  text-align: start;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.close-btn {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex-basis: 100%;
+    width: 98%;
+  }
+
+  .popup-content {
+    width: 85%;
+    padding: 1rem;
+  }
+}
